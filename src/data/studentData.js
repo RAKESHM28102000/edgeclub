@@ -1,6 +1,14 @@
 // data/studentData.js
 const students = [
   {
+  name: 'Dr.P.S.Manjula',
+  specialization: 'Faculty Co-ordinator',
+  image: './images/The_Senate_House,_Madras.jpg',
+  linkedin: 'https://linkedin.com/in/rakeshm',
+  instagram: 'https://instagram.com/rakesh',
+  whatsapp: 'https://wa.me/919999999999',
+},
+  {
     name: 'Kevin TP',
     specialization: 'MBA - Marketing',
     image: './images/image-1.jpeg',
