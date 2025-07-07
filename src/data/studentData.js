@@ -3,14 +3,14 @@ const students = [
   {
   name: 'Dr.P.S.Manjula',
   specialization: 'Faculty Co-ordinator',
-  image: './images/The_Senate_House,_Madras.jpg',
+  image: './images/manjula.png',
   linkedin: 'https://linkedin.com/in/rakeshm',
   instagram: 'https://instagram.com/rakesh',
   whatsapp: 'https://wa.me/919999999999',
 },
   {
     name: 'Kevin TP',
-    specialization: 'MBA - Marketing',
+    specialization: 'MBA - Operations',
     image: './images/image-1.jpeg',
     linkedin: 'https://linkedin.com/in/rakeshm',
     instagram: 'https://instagram.com/rakesh',
@@ -18,7 +18,7 @@ const students = [
   },
   {
     name: 'katie JS',
-    specialization: 'MBA - HR',
+    specialization: 'MBA - Operations',
     image: './images/image-2.jpeg',
     linkedin: '#',
     instagram: '#',
@@ -27,14 +27,14 @@ const students = [
   {
     name: 'Prawin k',
     specialization: 'MBA - Finance',
-    image: './image-3.JPG',
+    image:'./images/prawin.png',
     linkedin: '#',
     instagram: '#',
     whatsapp: '#',
   },
   {
     name: 'Vasumathy',
-    specialization: 'MBA - Systems',
+    specialization: 'MBA - Finance',
     image:'./images/image-7.jpeg',
     linkedin: '#',
     instagram: '#',
@@ -42,7 +42,7 @@ const students = [
   },
   {
     name: 'Kamelesh R',
-    specialization: 'MBA - Logistics',
+    specialization: 'MBA - Finance',
     image:'./images/image-6.jpeg',
     linkedin: '#',
     instagram: '#',
@@ -74,7 +74,7 @@ const students = [
   },
   {
     name: 'Sheshika',
-    specialization: 'MBA - Systems',
+    specialization: 'MBA - Marketing',
     image: './images/image-3.JPG',
     linkedin: '#',
     instagram: '#',
@@ -115,7 +115,7 @@ const students = [
  {
    name: 'Rakesh',
    specialization: 'MBA - HR',
-   image:'./images/image-13.jpg',
+   image:'./images/rakesh.jpeg',
    linkedin: '#',
    instagram: '#',
    whatsapp: '#',
