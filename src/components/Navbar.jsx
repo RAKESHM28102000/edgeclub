@@ -3,35 +3,38 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    // Close menu on route change
-    setIsOpen(false);
+    setIsOpen(false); // Close menu on route change
   }, [location]);
 
-  const toggleTheme = () => {
-    document.documentElement.classList.toggle('dark');
-    setDarkMode(!darkMode);
-  };
+  const navItems = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Events', path: '/events' },
+    { name: 'Students', path: '/students' },
+    { name: 'Entrepreneur', path: '/entrepreneur' },
+    { name: 'Contact', path: '/contact' },
+  ];
+
+  const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-blue-900 dark:bg-gray-900 text-white fixed top-0 w-full z-50 shadow-lg">
+    <nav className="bg-blue-900 dark:bg-gray-900 text-white fixed top-0 w-full z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-xl font-bold">EDGE Club</h1>
+        <h1 className="text-2xl font-bold tracking-wide text-yellow-400">EDGE Club</h1>
 
-        {/* Hamburger Button for Mobile */}
+        {/* Hamburger Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="sm:hidden focus:outline-none"
+          className="sm:hidden focus:outline-none text-white"
         >
           <svg
-            className="w-6 h-6"
+            className="w-7 h-7"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               strokeLinecap="round"
@@ -42,27 +45,26 @@ const Navbar = () => {
           </svg>
         </button>
 
-        {/* Nav Links */}
+        {/* Navigation Links */}
         <div
           className={`${
             isOpen ? 'block' : 'hidden'
-          } absolute top-16 left-0 w-full bg-blue-900 dark:bg-gray-900 sm:bg-transparent sm:dark:bg-transparent sm:static sm:flex sm:items-center sm:space-x-6 transition-all duration-300`}
+          } sm:flex sm:items-center w-full sm:w-auto absolute sm:static top-16 left-0 bg-blue-900 dark:bg-gray-900 sm:bg-transparent sm:dark:bg-transparent transition-all duration-300`}
         >
-          <div className="flex flex-col sm:flex-row items-start sm:items-center px-4 sm:px-0 py-4 sm:py-0 gap-4 w-full">
-            <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
-            <Link to="/about" className="hover:text-yellow-400 transition">About</Link>
-            <Link to="/events" className="hover:text-yellow-400 transition">Events</Link>
-            <Link to="/students" className="hover:text-yellow-400 transition">Students</Link>
-            <Link to="/entrepreneur" className="hover:text-yellow-400 transition">Entrepreneur</Link>
-            <Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link>
-            
-            {/* Dark Mode Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="ml-auto sm:ml-0 bg-white text-black px-3 py-1 rounded text-sm hover:bg-gray-200 transition"
-            >
-              {darkMode ? 'Light' : 'Dark'}
-            </button>
+          <div className="grid sm:flex sm:gap-4 w-full sm:w-auto text-center">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`w-full sm:w-auto px-4 py-2 sm:py-1 sm:px-3 font-medium rounded-md transition-all duration-200 ${
+                  isActive(item.path)
+                    ? 'bg-yellow-400 text-black'
+                    : 'hover:bg-yellow-300 hover:text-black'
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
