@@ -28,8 +28,7 @@ const App = () => {
           <Route path="/students" element={<Students />} />
           <Route path="/entrepreneur" element={<Entrepreneur />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Home />} />
-          <Route path="/*" element={<NotFound/>} /> {/* Catch-all route */}
+          <Route path="*" element={<NotFound/>} /> {/* Catch-all route */}
         </Routes>
       </main>
       <Footer />
