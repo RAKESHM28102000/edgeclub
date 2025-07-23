@@ -10,6 +10,7 @@ import Entrepreneur from './pages/Entrepreneur';
 import Contact from './pages/Contact';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import NotFound from './pages/NotFound';
 
 const App = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/entrepreneur" element={<Entrepreneur />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
+          <Route path="/*" element={<NotFound/>} /> {/* Catch-all route */}
         </Routes>
       </main>
       <Footer />
