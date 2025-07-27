@@ -6,6 +6,7 @@ import Students from "./Students";
 import Entrepreneur from "./Entrepreneur";
 import Contact from "./Contact";
 import About from "./About";
+import StudentsCoursel from "./StudentsCoursel";
 const Home = () => {
   return (
     <>
@@ -79,7 +80,7 @@ const Home = () => {
       <About />
       <Events />
       <Entrepreneur />
-      <Students />
+      <StudentsCoursel/>
       <Contact />
     </>
   );

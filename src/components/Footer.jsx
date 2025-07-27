@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
       <div className="text-center text-xs mt-6 text-gray-400">
         © 2025 EDGE Club. All rights reserved.<br />
-        Website created by <a href="https://inspireloop.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Rakesh Creative Solution</a>
+        Website created by <a href="https://inspireloop.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Rakesh inspireloop Tech</a>
       </div>
     </footer>
   );

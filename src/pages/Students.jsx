@@ -13,7 +13,7 @@ const Students = () => (
             className="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105"
             data-aos="zoom-in" data-aos-delay={index * 100}
           >
-            <img src={student.image} alt={student.name} className="w-full h-56 object-cover" />
+            <img src={student.image} alt={student.name} className="w-full h-56 object-contain" />
             <div className="p-4 text-center">
               <h3 className="text-xl font-bold mb-1">{student.name}</h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">{student.specialization}</p>
