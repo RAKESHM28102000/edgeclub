@@ -24,10 +24,10 @@ const About = () => (
             <p>Foster innovation, build leadership skills, and connect students with real-world opportunities in business and startups.</p>
           </div>
 
-          <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow">
-            <h3 className="text-xl font-semibold mb-1">Faculty Engagement</h3>
-            <p>We work hand-in-hand with professors to enrich learning through seminars, industry projects, and case studies.</p>
-          </div>
+          {/* <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow"> */}
+            {/* <h3 className="text-xl font-semibold mb-1">Faculty Engagement</h3> */}
+            {/* {/* <p>We work hand-in-hand with professors to enrich learning through seminars, industry projects, and case studies.</p> */} 
+          {/* </div> */}
 
           {/* <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow"> */}
             {/* <h3 className="text-xl font-semibold mb-1">Community Building</h3> */}
