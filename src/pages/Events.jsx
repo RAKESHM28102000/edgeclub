@@ -8,9 +8,20 @@ const Events = () => (
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-          <h3 className="text-xl font-semibold mb-2">Venturo</h3>
+          <h3 className="text-xl font-semibold mb-2">VENTURO</h3>
           <p>24-hour Podcast and innovation challenges to solve real-world problems and develop MVPs.</p>
         </div>
+
+        <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+        <h3 className="text-xl font-semibold mb-2">ESCAPE ROOM</h3>
+       <p>The purpose of the event was to enhance students’ analytical thinking, creative reasoning and decision-making abilities. It aimed to promote effective teamwork and improve their capacity to perform effectively under time-bound conditions.</p>
+        </div>
+
+         <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="600">
+   <h3 className="text-xl font-semibold mb-2">Product-X A Creative Spin</h3>
+   <p>roduct X was a two-round, entrepreneurship-themed event designed to test participants' innovation, marketing skills, and 
+critical thinking.</p>
+ </div>
 
         <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
           <h3 className="text-xl font-semibold mb-2">Idea Pitching Contests</h3>
@@ -32,10 +43,6 @@ const Events = () => (
           <p>A showcase of creative projects and prototypes developed by students from various departments.</p>
         </div>
 
-        <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="600">
-          <h3 className="text-xl font-semibold mb-2">National Entrepreneurship Week</h3>
-          <p>Week-long celebration with competitions, exhibitions, and workshops promoting entrepreneurship culture.</p>
-        </div>
       </div>
 
       <div className="mt-12 text-center" data-aos="fade-up" data-aos-delay="700">
