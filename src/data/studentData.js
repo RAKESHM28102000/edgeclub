@@ -41,7 +41,7 @@ const students = [
     website: 'https://inspireloop.onrender.com/',
   },
   {
-    name: 'Kamelesh Rajan',
+    name: 'Kamalesh Rajan',
     specialization: 'MBA - Finance',
     image:'./images/image-6.jpeg',
     linkedin: 'https://www.linkedin.com/in/kamalesh-rajan-h-33166b210',

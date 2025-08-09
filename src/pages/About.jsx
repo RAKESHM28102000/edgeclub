@@ -24,10 +24,10 @@ const About = () => (
             <p>Foster innovation, build leadership skills, and connect students with real-world opportunities in business and startups.</p>
           </div>
 
-          <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow">
-            <h3 className="text-xl font-semibold mb-1">Faculty Engagement</h3>
-            <p>We work hand-in-hand with professors to enrich learning through seminars, industry projects, and case studies.</p> 
-          </div>
+          {/* <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow"> */}
+            {/* <h3 className="text-xl font-semibold mb-1">Faculty Engagement</h3> */}
+            {/* <p>We work hand-in-hand with professors to enrich learning through seminars, industry projects, and case studies.</p>  */}
+          {/* </div> */}
 
           {/* <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow"> */}
             {/* <h3 className="text-xl font-semibold mb-1">Community Building</h3> */}
@@ -45,7 +45,7 @@ const About = () => (
       {/* Image Section */}
       <div className="w-full md:w-1/2" data-aos="fade-left">
         <img
-          src="./images/group-illustrator.jpg"
+          src="./images/edge-name-13.png"
           alt="EDGE Club"
           className="w-full h-auto rounded-xl shadow-lg object-cover"
         />
