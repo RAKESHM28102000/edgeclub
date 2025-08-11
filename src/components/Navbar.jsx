@@ -16,6 +16,7 @@ const Navbar = () => {
     { name: 'Students', path: '/students' },
     { name: 'Entrepreneur', path: '/entrepreneur' },
     { name: 'Contact', path: '/contact' },
+    { name: 'Payment', path: '/payment', isButton: true }, // New Payment Button
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -57,7 +58,9 @@ const Navbar = () => {
                 key={item.path}
                 to={item.path}
                 className={`w-full sm:w-auto px-4 py-2 sm:py-1 sm:px-3 font-medium rounded-md transition-all duration-200 ${
-                  isActive(item.path)
+                  item.isButton
+                    ? 'bg-yellow-400 text-black hover:bg-yellow-300 hover:scale-105 transform'
+                    : isActive(item.path)
                     ? 'bg-yellow-400 text-black'
                     : 'hover:bg-yellow-300 hover:text-black'
                 }`}

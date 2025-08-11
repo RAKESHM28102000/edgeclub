@@ -8,6 +8,7 @@ import Events from './pages/Events';
 import Students from './pages/Students';
 import Entrepreneur from './pages/Entrepreneur';
 import Contact from './pages/Contact';
+import Payment from './pages/Payment'; // ✅ New payment page import
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NotFound from './pages/NotFound';
@@ -28,7 +29,8 @@ const App = () => {
           <Route path="/students" element={<Students />} />
           <Route path="/entrepreneur" element={<Entrepreneur />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound/>} /> {/* Catch-all route */}
+          <Route path="/payment" element={<Payment />} /> {/* ✅ New payment route */}
+          <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
         </Routes>
       </main>
       <Footer />

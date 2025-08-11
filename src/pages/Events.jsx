@@ -18,15 +18,15 @@ const Events = () => (
         </div>
 
          <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="600">
-   <h3 className="text-xl font-semibold mb-2">Product-X A Creative Spin</h3>
-   <p>roduct X was a two-round, entrepreneurship-themed event designed to test participants' innovation, marketing skills, and 
-critical thinking.</p>
- </div>
+             <h3 className="text-xl font-semibold mb-2">Product-X A Creative Spin</h3>
+             <p>roduct X was a two-round, entrepreneurship-themed event designed to test participants' innovation, marketing skills, and 
+          critical thinking.</p>
+           </div>
 
-        <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-          <h3 className="text-xl font-semibold mb-2">Idea Pitching Contests</h3>
-          <p>Students pitch business ideas to a panel of judges including investors and faculty mentors.</p>
-        </div>
+        {/* <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200"> */}
+          {/* <h3 className="text-xl font-semibold mb-2">Idea Pitching Contests</h3> */}
+          {/* <p>Students pitch business ideas to a panel of judges including investors and faculty mentors.</p> */}
+        {/* </div> */}
 
         <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
           <h3 className="text-xl font-semibold mb-2">Startup Bootcamps</h3>

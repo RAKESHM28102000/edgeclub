@@ -35,11 +35,9 @@ const Entrepreneur = () => (
           <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Founder, Kevin Consulting</p>
           <p className="text-sm">Business consultancy helping local startups and students with business plans, marketing strategies, and mentoring support.</p>
            <div className="flex justify-center gap-4 mt-4 text-xl text-blue-600 dark:text-blue-300">
-   <a href="https://linkedin.com/in/rakesh-m-b67121217" target="_blank" rel="noopener 
-noreferrer"><FaLinkedin className="hover:text-blue-800 transition" /></a>
-   <a href="https://inspireloop.onrender.com" target="_blank" rel="noopener noreferrer"><FaGlobe 
-className="hover:text-green-600 transition" /></a>
- </div>
+         <a href="https://linkedin.com/in/rakesh-m-b67121217" target="_blank" rel="noopener noreferrer"><FaLinkedin className="hover:text-blue-800 transition" /></a>
+         <a href="https://inspireloop.onrender.com" target="_blank" rel="noopener noreferrer"><FaGlobe className="hover:text-green-600 transition" /></a>
+         </div>
         </div>
       </div>
 
