@@ -20,29 +20,34 @@ const Payment = () => (
         <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow space-y-3">
           <div className="flex items-center gap-3">
             <FaGooglePay className="text-blue-600 text-2xl" />
-            <p className="font-medium">GPay Number: <span className="text-blue-700 dark:text-blue-300">+91 98765 43210</span></p>
+            <p className="font-medium">UPI Number :<span className="text-blue-700 dark:text-blue-300">6382550801</span></p>
+          </div>
+           <div className="flex items-center gap-3">
+            <FaRupeeSign className="text-yellow-500 text-lg" />
+            <p className="font-medium">UPI ID : <span className="text-yellow-600 dark:text-yellow-400">mpk.prawin.kumar@oksbi</span></p>
           </div>
           <div className="flex items-center gap-3">
             <FaPhoneAlt className="text-green-600 text-lg" />
-            <p className="font-medium">Contact: <span className="text-green-700 dark:text-green-300">+91 91234 56789</span></p>
+            <p className="font-medium">Account Number : <span className="text-green-700 dark:text-green-300">43862577454</span></p>
           </div>
-          <div className="flex items-center gap-3">
-            <FaRupeeSign className="text-yellow-500 text-lg" />
-            <p className="font-medium">UPI ID: <span className="text-yellow-600 dark:text-yellow-400">edgeclub@upi</span></p>
-          </div>
+           <div className="flex items-center gap-3">
+           <FaPhoneAlt className="text-green-600 text-lg" />
+           <p className="font-medium">IFSC :<span className="text-green-700 dark:text-green-300">SBIN0002234</span></p>
+         </div>
+         
         </div>
 
         {/* Payment Status */}
         <div className="bg-blue-100 dark:bg-blue-900 p-4 rounded-lg shadow space-y-2">
-          <p className="font-medium text-lg">Amount Spent: <span className="text-red-500">₹1,200</span></p>
-          <p className="font-medium text-lg">Remaining Amount: <span className="text-green-600">₹3,800</span></p>
+          <p className="font-medium text-lg">Startup Donation :<span className="text-red-500">₹12,00,00,000</span></p>
+          <p className="font-medium text-lg">College Spending for Club Growth :<span className="text-green-600">₹80,00,000</span></p>
         </div>
 
         {/* Pay Button */}
         <button
           className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded-lg shadow transition duration-300 transform hover:scale-105"
         >
-          Pay Now
+          Kindly Pay !
         </button>
       </div>
 
@@ -51,9 +56,9 @@ const Payment = () => (
         <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center">
           <FaQrcode className="text-6xl text-blue-700 dark:text-blue-400 mb-4" />
           <img
-            src="/images/qrcode.png"
+            src="/images/qr-code-pk.jpeg"
             alt="QR Code"
-            className="w-48 h-48 object-cover rounded-lg border-4 border-blue-600 dark:border-blue-400"
+            className="w-48 h-48 lg:w-[400px] lg:h-[600px] object-contain rounded-lg border-4 border-blue-600 dark:border-blue-400"
           />
           <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">Scan to pay via UPI</p>
         </div>

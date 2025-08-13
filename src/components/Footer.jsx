@@ -14,7 +14,7 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold mb-2">Contact</h2>
           <div className="text-sm flex flex-col gap-1">
-            <p className="flex items-center gap-2"><FaEnvelope /> edgeclub@unom.ac.in</p>
+            <p className="flex items-center gap-2"><FaEnvelope /> edge-unom@protonmail.com </p>
             <p className="flex items-center gap-2"><FaPhoneAlt /> +91-44-2539-9422</p>
             <p className="flex items-center gap-2"><FaMapMarkerAlt /> Chepauk, Chennai</p>
           </div>
@@ -23,9 +23,9 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold mb-2">Follow Us</h2>
           <div className="flex gap-4 text-2xl">
-            <a href="#" className="hover:text-blue-500" aria-label="Facebook"><FaFacebook /></a>
-            <a href="#" className="hover:text-pink-500" aria-label="Instagram"><FaInstagram /></a>
-            <a href="#" className="hover:text-blue-400" aria-label="LinkedIn"><FaLinkedin /></a>
+            {/* <a href="#" className="hover:text-blue-500" aria-label="Facebook"><FaFacebook /></a> */}
+            <a href="https://www.instagram.com/edge_doms" className="hover:text-pink-500" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/company/entrepreneurship-development-and-growth-establishment-club/" className="hover:text-blue-400" aria-label="LinkedIn"><FaLinkedin /></a>
           </div>
         </div>
       </div>

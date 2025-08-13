@@ -18,7 +18,7 @@ const Contact = () => {
         <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
         <p className="mb-2">EDGE Club, Department of Management Studies</p>
         <p className="mb-2">University of Madras, Chepauk, Chennai - 600005</p>
-        <p className="mb-6">Email: edgeclub@unom.ac.in | Phone: +91-44-2539-9422</p>
+        <p className="mb-6">Email: edge-unom@protonmail.com | Phone: +91-44-2539-9422</p>
 
         <form onSubmit={handleSubmit} className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-md">
           <div className="mb-4">

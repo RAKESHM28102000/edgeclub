@@ -19,7 +19,7 @@ const Events = () => (
 
          <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="600">
              <h3 className="text-xl font-semibold mb-2">Product-X A Creative Spin</h3>
-             <p>roduct X was a two-round, entrepreneurship-themed event designed to test participants' innovation, marketing skills, and 
+             <p>Product X was a two-round, entrepreneurship-themed event designed to test participants' innovation, marketing skills, and 
           critical thinking.</p>
            </div>
 

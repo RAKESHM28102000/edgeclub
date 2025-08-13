@@ -7,6 +7,7 @@ import Entrepreneur from "./Entrepreneur";
 import Contact from "./Contact";
 import About from "./About";
 import StudentsCoursel from "./StudentsCoursel";
+import Payment from "./Payment";
 const Home = () => {
   return (
     <>
@@ -81,6 +82,7 @@ const Home = () => {
       <Events />
       <Entrepreneur />
       <StudentsCoursel/>
+      <Payment/>
       <Contact />
     </>
   );
