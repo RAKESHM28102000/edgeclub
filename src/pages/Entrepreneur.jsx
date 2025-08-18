@@ -31,9 +31,9 @@ const Entrepreneur = () => (
         {/* Student Startup 2 */}
         <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg text-center" data-aos="zoom-in" data-aos-delay="300">
           <img src="/images/image-1.jpeg" alt="Arun K" className="w-28 h-28 object-cover rounded-full mx-auto mb-4 border-4 border-indigo-500 dark:border-indigo-400" />
-          <h3 className="text-xl font-semibold mb-2">Kevin Thomas</h3>
-          <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Founder, Kevin Consulting</p>
-          <p className="text-sm">Business consultancy helping local startups and students with business plans, marketing strategies, and mentoring support.</p>
+          <h3 className="text-xl font-semibold mb-2">Kevin Thomas Panicker</h3>
+          <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Founder,M&K Partners</p>
+          <p className="text-sm">Boutique Advisory for Leaders and Organisations navigating Mission-Critical Decisions in Defence, Energy, Finance, Technology & Sustainability; where stakes are global, timelines are unforgiving and precision is non-negotiable</p>
            <div className="flex justify-center gap-4 mt-4 text-xl text-blue-600 dark:text-blue-300">
          <a href="https://linkedin.com/in/rakesh-m-b67121217" target="_blank" rel="noopener noreferrer"><FaLinkedin className="hover:text-blue-800 transition" /></a>
          <a href="https://inspireloop.onrender.com" target="_blank" rel="noopener noreferrer"><FaGlobe className="hover:text-green-600 transition" /></a>

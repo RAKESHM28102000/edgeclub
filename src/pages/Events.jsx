@@ -9,7 +9,7 @@ const Events = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
           <h3 className="text-xl font-semibold mb-2">VENTURO</h3>
-          <p>24-hour Podcast and innovation challenges to solve real-world problems and develop MVPs.</p>
+          <p>Podcast Hosted by the students for future entrepreneurs, focused on finding market gaps & to solve real world problems. For market segment gaps and to ideate on on MVP formulation</p>
         </div>
 
         <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">

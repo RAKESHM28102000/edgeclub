@@ -8,6 +8,7 @@ import Contact from "./Contact";
 import About from "./About";
 import StudentsCoursel from "./StudentsCoursel";
 import Payment from "./Payment";
+import Gallery from "./Gallery";
 const Home = () => {
   return (
     <>
@@ -83,6 +84,7 @@ const Home = () => {
       <Entrepreneur />
       <StudentsCoursel/>
       <Payment/>
+      <Gallery/>
       <Contact />
     </>
   );

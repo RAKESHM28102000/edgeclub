@@ -47,7 +47,7 @@ const About = () => (
         <img
           src="./images/edge-name-13.png"
           alt="EDGE Club"
-          className="w-full h-auto rounded-xl shadow-lg object-cover"
+          className="w-full h-auto rounded-xl shadow-sm hover:shadow-2xl shadow-amber-50 hover:shadow-amber-300 object-cover"
         />
       </div>
     </div>

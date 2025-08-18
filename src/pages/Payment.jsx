@@ -38,10 +38,10 @@ const Payment = () => (
         </div>
 
         {/* Payment Status */}
-        <div className="bg-blue-100 dark:bg-blue-900 p-4 rounded-lg shadow space-y-2">
-          <p className="font-medium text-lg">Startup Donation :<span className="text-red-500">₹12,00,00,000</span></p>
-          <p className="font-medium text-lg">College Spending for Club Growth :<span className="text-green-600">₹80,00,000</span></p>
-        </div>
+        {/* <div className="bg-blue-100 dark:bg-blue-900 p-4 rounded-lg shadow space-y-2"> */}
+          {/* <p className="font-medium text-lg">Startup Donation :<span className="text-red-500">₹12,00,00,000</span></p> */}
+          {/* <p className="font-medium text-lg">College Spending for Club Growth :<span className="text-green-600">₹80,00,000</span></p> */}
+        {/* </div> */}
 
         {/* Pay Button */}
         <button
