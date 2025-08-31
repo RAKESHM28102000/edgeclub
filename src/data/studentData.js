@@ -115,7 +115,7 @@ const students = [
  {
    name: 'Rakesh',
    specialization: 'MBA - HR',
-   image:'./images/rakesh.jpeg',
+   image:'./images/rakesh.jpg',
    linkedin: 'https://www.linkedin.com/in/rakesh-m-b67121217/',
    instagram: 'https://www.instagram.com/rakesh_m_28/',
    website: 'https://inspireloop.onrender.com/',
