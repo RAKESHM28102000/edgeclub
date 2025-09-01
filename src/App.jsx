@@ -12,6 +12,7 @@ import Payment from './pages/Payment'; // ✅ New payment page import
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NotFound from './pages/NotFound';
+import Gallery from './pages/Gallery';
 
 const App = () => {
   useEffect(() => {
@@ -28,8 +29,9 @@ const App = () => {
           <Route path="/events" element={<Events />} />
           <Route path="/students" element={<Students />} />
           <Route path="/entrepreneur" element={<Entrepreneur />} />
+          <Route path="/gallery" element={<Gallery/>} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/payment" element={<Payment />} /> {/* ✅ New payment route */}
+          <Route path="/payment" element={<Payment />} />
           <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
         </Routes>
       </main>

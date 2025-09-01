@@ -15,8 +15,9 @@ const Navbar = () => {
     { name: 'Events', path: '/events' },
     { name: 'Students', path: '/students' },
     { name: 'Entrepreneur', path: '/entrepreneur' },
+    { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
-    { name: 'Payment', path: '/payment', isButton: true }, // New Payment Button
+    { name: 'Payment', path: '/payment', isButton: true }, 
   ];
 
   const isActive = (path) => location.pathname === path;

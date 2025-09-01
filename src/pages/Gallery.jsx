@@ -3,20 +3,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const images = [
-     "images/events/ven8.jpeg",
-     "images/events/ven7.jpeg",
-     "images/events/ven6.jpeg",
-     "images/events/ven5.jpeg",
-     "images/events/ven4.jpeg",
-     "images/events/ven3.jpeg",
-     "images/events/ven2.jpeg",
-     "images/events/ven1.jpeg",
-
-
-
-
-
-
+  "images/events/ven8.jpeg",
+  "images/events/ven7.jpeg",
+  "images/events/ven6.jpeg",
+  "images/events/ven5.jpeg",
+  "images/events/ven4.jpeg",
+  "images/events/ven3.jpeg",
+  "images/events/ven2.jpeg",
+  "images/events/ven1.jpeg",
+  // you can add more images here
 ];
 
 export default function Gallery() {
@@ -34,7 +29,7 @@ export default function Gallery() {
         {images.map((src, index) => (
           <div
             key={index}
-            className={`relative overflow-hidden rounded-xl shadow-lg group ${
+            className={`relative overflow-hidden rounded-xl shadow-lg ${
               index % 7 === 0 ? "md:col-span-2 md:row-span-2" : ""
             }`}
             data-aos="zoom-in"
@@ -42,11 +37,8 @@ export default function Gallery() {
             <img
               src={src}
               alt={`Gallery ${index + 1}`}
-              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-500 flex items-center justify-center opacity-0 group-hover:opacity-100">
-              <p className="text-white text-lg font-semibold">View Image</p>
-            </div>
           </div>
         ))}
       </div>

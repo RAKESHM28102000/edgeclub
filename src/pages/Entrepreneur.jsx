@@ -12,8 +12,8 @@ const entrepreneurs = [
         title: "Founder, M&K Partners",
         description:
         "Boutique Advisory for Leaders and Organisations navigating Mission-Critical Decisions in Defence, Energy, Finance,Technology & Sustainability; where stakes are global, timelines are unforgiving and precision is non-negotiable.",
-        linkedin: "https://linkedin.com/in/kevinpanicker", // sample
-        website: "#",
+        linkedin: "https://www.linkedin.com/in/kevintp", // sample
+        website: "https://www.instagram.com/kevinthomaspanicker/",
         borderColor: "border-indigo-500 dark:border-indigo-400",
       },
   {
