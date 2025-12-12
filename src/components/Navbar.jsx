@@ -6,7 +6,7 @@ const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    setIsOpen(false); // Close menu on route change
+    setIsOpen(false); // Auto-close menu on route change
   }, [location]);
 
   const navItems = [
@@ -17,7 +17,7 @@ const Navbar = () => {
     { name: 'Entrepreneur', path: '/entrepreneur' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
-    { name: 'Payment', path: '/payment', isButton: true }, 
+    { name: 'Payment', path: '/payment', isButton: true },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -25,15 +25,21 @@ const Navbar = () => {
   return (
     <nav className="bg-blue-900 dark:bg-gray-900 text-white fixed top-0 w-full z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-2xl font-bold tracking-wide text-yellow-400">EDGE Club</h1>
+        
+        {/* Logo */}
+        <h1 className="text-2xl font-bold tracking-wide text-yellow-400">
+          EDGE Club
+        </h1>
 
-        {/* Hamburger Button */}
+        {/* Hamburger Button with animation */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="sm:hidden focus:outline-none text-white"
+          className="sm:hidden focus:outline-none text-white transition-transform duration-300"
         >
           <svg
-            className="w-7 h-7"
+            className={`w-8 h-8 transform transition-transform duration-300 ${
+              isOpen ? "rotate-90" : ""
+            }`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -42,35 +48,53 @@ const Navbar = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d={isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
+              className="transition-all duration-300"
+              d={
+                isOpen
+                  ? "M6 18L18 6M6 6l12 12" // X icon
+                  : "M4 6h16M4 12h16M4 18h16" // Hamburger
+              }
             />
           </svg>
         </button>
 
-        {/* Navigation Links */}
+        {/* Mobile + Desktop Menu */}
         <div
-          className={`${
-            isOpen ? 'block' : 'hidden'
-          } sm:flex sm:items-center w-full sm:w-auto absolute sm:static top-16 left-0 bg-blue-900 dark:bg-gray-900 sm:bg-transparent sm:dark:bg-transparent transition-all duration-300`}
+          className={`
+            sm:flex sm:items-center sm:static w-full sm:w-auto
+            absolute top-16 left-0 
+            bg-blue-900 dark:bg-gray-900 sm:bg-transparent 
+            overflow-hidden sm:overflow-visible
+            transition-all duration-500 
+            ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 sm:opacity-100"}
+          `}
         >
-          <div className="grid sm:flex sm:gap-4 w-full sm:w-auto text-center">
+          <div
+            className="grid sm:flex sm:gap-4 w-full sm:w-auto text-center 
+                       transition-all duration-300 ease-in-out"
+          >
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`w-full sm:w-auto px-4 py-2 sm:py-1 sm:px-3 font-medium rounded-md transition-all duration-200 ${
-                  item.isButton
-                    ? 'bg-yellow-400 text-black hover:bg-yellow-300 hover:scale-105 transform'
-                    : isActive(item.path)
-                    ? 'bg-yellow-400 text-black'
-                    : 'hover:bg-yellow-300 hover:text-black'
-                }`}
+                className={`
+                  w-full sm:w-auto px-4 py-3 sm:py-1 sm:px-3 
+                  font-medium rounded-md transition-all duration-300
+                  ${
+                    item.isButton
+                      ? "bg-yellow-400 text-black hover:bg-yellow-300 hover:scale-105 transform"
+                      : isActive(item.path)
+                      ? "bg-yellow-400 text-black"
+                      : "hover:bg-yellow-300 hover:text-black"
+                  }
+                `}
               >
                 {item.name}
               </Link>
             ))}
           </div>
         </div>
+
       </div>
     </nav>
   );

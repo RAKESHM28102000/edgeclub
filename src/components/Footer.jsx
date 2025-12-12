@@ -15,7 +15,7 @@ const Footer = () => {
           <h2 className="text-xl font-semibold mb-2">Contact</h2>
           <div className="text-sm flex flex-col gap-1">
             <p className="flex items-center gap-2"><FaEnvelope /> edge-unom@protonmail.com </p>
-            <p className="flex items-center gap-2"><FaPhoneAlt /> +91-44-2539-9422</p>
+            {/* <p className="flex items-center gap-2"><FaPhoneAlt /> +91-44-2539-9422</p> */}
             <p className="flex items-center gap-2"><FaMapMarkerAlt /> Chepauk, Chennai</p>
           </div>
         </div>

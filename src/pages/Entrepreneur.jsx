@@ -19,7 +19,7 @@ const entrepreneurs = [
   {
     id: 2,
     name: "Rakesh M",
-    image: "/images/rakesh.jpg",
+    image: "/images/rakesh.jpeg",
     title: "Founder, InspireLoop Technologies",
     description:
       "Blending digital innovation with rural empowerment by building websites, graphics, and training youth in IT, AI, and digital tools for the future.",

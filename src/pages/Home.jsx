@@ -22,7 +22,7 @@ const Home = () => {
             className="text-4xl sm:text-5xl font-extrabold mb-6 leading-tight"
             data-aos="zoom-in" data-aos-duration="1000"
           >
-            Welcome to EDGE Club
+            EDGE Club – Where Ideas Become Impact
           </h2>
           <p
             className="text-lg sm:text-xl mb-6"
